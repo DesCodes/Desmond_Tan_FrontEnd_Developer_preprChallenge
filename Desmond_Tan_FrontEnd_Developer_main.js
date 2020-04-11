@@ -1,5 +1,13 @@
 $(document).ready(function() {
 
+	// Navigation funtions
+	$('.bar').on('click', function() {
+		$('.sideMenuContainer').css({'left':'0'})
+		$('.sideMenuContainer').toggle('slide');
+		// $('.sideMenuContainer').animate({width: 'toggle'})
+	});
+
+	// Explore Challenge image gallery functions
 	$('.imgContainer').children().on('click', function() {
 		// $('.imgContainer').children(':first').removeClass('imgStart')
 
