@@ -4,16 +4,19 @@
 	<meta charset="UTF-8">
 	<title>Prepr</title>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<!-- <link rel="stylesheet" href="/path/to/flickity.css" media="screen"> -->
 	<link rel="stylesheet" href="Desmond_Tan_FrontEnd_Developer_styles.css">
 </head>
 <body>
 	<header>
-		<div class="PreprOuterContainer">
+		<div class="preprOuterContainer">
 			<div class="preprContainer">
 				<ul>
 					<li>
 						<a href="https://preprlabs.org/" target="_blank">
-							<img src="https://preprmedialive.s3.amazonaws.com/public/front/img/logo.png" alt="prepr">
+							<img class="logo" src="https://preprmedialive.s3.amazonaws.com/public/front/img/logo.png" alt="prepr">
 						</a>
 					</li>
 					<li class="barsContainer">
@@ -25,7 +28,7 @@
 			<div class="sideMenuContainer">
 				<div class="userContainer">
 					<a href="">
-						<img src="https://preprmedialive.s3.ca-central-1.amazonaws.com/front/img/default-user.png" alt="user silhouette">
+						<img class="navUserProfile center" src="https://preprmedialive.s3.ca-central-1.amazonaws.com/front/img/default-user.png" alt="user silhouette">
 					</a>
 
 					<h5 id="userName">User Name</h5>
@@ -122,7 +125,7 @@
 			</div>
 
 			<div class="searchBar">
-				<ul>
+				<ul class="sideContainer">
 					<li class="searchContainer">
 						<span class="searchIconContainer">
 							<img src="https://preprmedialive.s3.amazonaws.com/public/front/img/search_icon.png">
@@ -135,7 +138,7 @@
 					</li>
 					<li class="userProfileContainer">
 						<a href="">
-							<img src="https://preprmedialive.s3.ca-central-1.amazonaws.com/front/img/default-user.png" alt="user silhouette">
+							<img class="userProfile" src="https://preprmedialive.s3.ca-central-1.amazonaws.com/front/img/default-user.png" alt="user silhouette">
 						</a>
 					</li>
 				</ul>
@@ -143,7 +146,40 @@
 		</div>
 	</header>
 
-	<section>
+<!-- challenges section -->
+	<section id="challengeSection">
+		<div class="main-carousel" data-flickity='{ "autoPlay": true, "wrapAround": true, "cellAlign": "left", "contain": true }'>
+		  <div class="carousel-cell">
+		  	<a href="">
+			  	<img src="https://preprmedialive.s3.ca-central-1.amazonaws.com/uploads/challenge/M3qyrzWFGUn4f4BogEzjrP5nJ0Us5kx4KGjdDNb4.png" alt="">
+		  	</a>
+		  </div>
+		  <div class="carousel-cell">
+		  	<a href="">
+			  	<img src="https://preprmedialive.s3.ca-central-1.amazonaws.com/uploads/challenge/n3OimEwYjW5uJgg4JS9tj6oXhSBlg55B8Mef6yjx.png" alt="">
+		  	</a>
+		  </div>
+		  <div class="carousel-cell">
+		  	<a href="">
+			  	<img src="https://preprmedialive.s3.ca-central-1.amazonaws.com/uploads/challenge/LNZQpLzGKZpk2dqKtsSfG7QklYK7f5nEM8gjG8zc.png" alt="">
+		  	</a>
+		  </div>
+		  <div class="carousel-cell">
+		  	<a href="">
+		  		<img src="https://preprmedialive.s3.ca-central-1.amazonaws.com/uploads/challenge/z93GqGFOZlp0dXrYL2o9L2Y2ZEmVUTUUaSDbqZ9O.png" alt="">
+		  	</a>
+		  </div>
+		  <div class="carousel-cell">
+		  	<a href="">
+		  		<img src="https://preprmedialive.s3.ca-central-1.amazonaws.com/uploads/challenge/1p9RkaCxoNNrQaj5ISwBcQLVWmfDjpcShom2G16p.png" alt="">
+		  	</a>
+		  </div>
+		  
+		</div>
+	</section>
+
+<!-- explore section -->
+	<!-- <section id="exploreSection">
 		<div class="mainContainer">
 			<div class="upperMainBox">
 				<div class="titleBox">
@@ -255,6 +291,77 @@
 				<a href="" class="numberBox">»</a>
 			</div>
 		</div>
+	</section> -->
+
+	<section class="exploreSection">
+		<div class="innerContainer">
+			<div class="imgContainer">
+				<figure id="img1">
+					<img src="https://preprmedialive.s3.ca-central-1.amazonaws.com/uploads/challenge/tmx4zAFyMKbA39JouysPRFqor.jpg" alt="">
+				</figure>
+				<figure id="img2">
+					<img src="https://preprmedialive.s3.ca-central-1.amazonaws.com/uploads/challenge/kFAKrsgG91TV0ZoQsy3IhWZmI.jpg" alt="">
+				</figure>
+				<figure id="img3">
+					<img src="https://preprmedialive.s3.ca-central-1.amazonaws.com/uploads/challenge/LGtxjGeIkje2QJm7GPK5s4So4.png" alt="">
+				</figure>
+				<figure id="img4">
+					<img src="https://preprmedialive.s3.ca-central-1.amazonaws.com/uploads/challenge/9sOWMH3o90jdBatFXqAlVA3pf.png" alt="">
+				</figure>
+				<figure id="img5">
+					<img src="https://preprmedialive.s3.ca-central-1.amazonaws.com/uploads/challenge/X594nZSBbXgvICcHUa4s1EjeN.png" alt="">
+				</figure>
+			</div>
+
+			<div class="exploreTextContainer">
+				<div class="img1 displayContainer">
+					<h3 class="exploreTitle">
+					COVID-19 Challenge - Low-cost monitoring system for COVID-19 patients
+				</h3>
+				<p class="exploreText">
+					NRC is seeking a low cost system (unit cost <$25) that can continuously measure temperature, peripheral capillary oxygen saturation (SpO2), blood pressure (BP), pulse and respiration rates, and transmit this in...
+				</p>
+				</div>
+			</div>
+
+			<div class="hiddenText">
+				<div class="img2">
+					<h3 class="exploreTitle">
+					COVID-19 Challenge - Point of Care & Home Diagnostic Kit for COVID-19
+					</h3>
+					<p class="exploreText">
+						The Public Health Agency of Canada (PHAC) and National Research Council (NRC) are seeking a solution that will diagnose individuals affected by COVID-19 within 3 days of the start of their symptoms using a sample, other than a nasopharyngeal swab, with a rapid s...
+					</p>
+				</div>
+
+				<div class="img3">
+					<h3 class="exploreTitle">
+						Recycled Plastic Ceiling Tiles
+					</h3>
+					<p class="exploreText">
+						View more details and submit the project here: https://www.ic.gc.ca/eic/site/101.nsf/eng/00090.html Problem statement The challenge we are facing is global and departmental. Globally, there is an accumulation of plastic with the equivalent of one tonne per person in exi...
+					</p>
+				</div>
+
+				<div class="img4">
+					<h3 class="exploreTitle">
+						Diverting End of Life Vehicle Plastics from Landfills
+					</h3>
+					<p class="exploreText">
+						View more details and submit your project here: https://www.ic.gc.ca/eic/site/101.nsf/eng/00092.html Problem statement It is estimated that Canada generates between 300 and 400 kt per year of automotive...
+					</p>
+				</div>
+
+				<div class="img5">
+					<h3 class="exploreTitle">
+						Sensing Technology for Monitoring Microplastics in Marine Environments
+					</h3>
+					<p class="exploreText">
+						View more details and submit your project here: https://www.ic.gc.ca/eic/site/101.nsf/eng/00091.html Problem statement Microplastics are plastic particles with characteristic length scales less than 5 mm...
+					</p>
+				</div>
+			</div>
+		</div>	
 	</section>
 
 	<footer>
@@ -273,5 +380,10 @@
 			</svg>
 		</div>
 	</footer>
+
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<!-- <script src="/path/to/flickity.pkgd.min.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="Desmond_Tan_FrontEnd_Developer_main.js"></script>
 </body>
 </html>
