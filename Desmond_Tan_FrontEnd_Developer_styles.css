@@ -60,7 +60,7 @@ section {
 }
 .userContainer h5, .featureTextBox h3, .featureTextBox p,
 .exploreTextContainer p, .descriptionBox h5, .descriptionBox p,
-.submissionBox h5, .submissionBox button {
+.submissionBox h5, .submissionBox button, .textContainer a h5 {
 	font-family: sans-serif;
 }
 .navContainer h5, .exploreTitle {
@@ -84,15 +84,18 @@ section {
 .userContainer h5, .navContainer h5, .searchContainer input, .searchContainer span {
 	font-size: 1rem;
 }
-
+.barsContainer .bar, .exploreSection .imgContainer figure img, .submissionBox button {
+	cursor: pointer;
+}
+.userContainer a {
+	width: fit-content;
+	-webkit-fill-available: fit-content;
+}
 
 
 
 
 /*Navigation*/
-.barsContainer .bar {
-	cursor: pointer;
-}
 .preprOuterContainer {
 	position: fixed;
 	z-index: 10;
@@ -125,10 +128,13 @@ img.logo {
 	height: 85px;
 }
 .userContainer a {
-	padding: 20px;
+	margin: 20px auto;
 }
 .userContainer h5 {
 	margin-bottom: 1rem;
+}
+.navContainer ul li:not(:last-child):hover {
+	background: #f3f7fc;
 }
 .navContainer h5 {
 	padding: .5rem 1rem;
@@ -180,8 +186,6 @@ img.logo {
 .featureBox figure {
 	overflow: hidden;
 	margin: 0 auto;
-/*	width: fit-content;
-	-webkit-fill-available: fit-content;*/
 }
 .featureBox figure img:hover {
 	transform: scale(1.1);
@@ -230,9 +234,6 @@ img.logo {
 .exploreSection .imgContainer figure img:hover {
 	transform: scale(1.1);
 	opacity: .75;
-}
-.exploreSection .imgContainer figure img {
-	cursor: pointer;
 }
 .exploreTitle {
 	font-size: 1.75rem;
@@ -308,7 +309,6 @@ footer .textContainer a {
 	width: 150px;
 	height: 45px;
 	border: none;
-	cursor: pointer;
 	color: #fff;
 	border-radius: 5px;
 	background: #13b15c;
