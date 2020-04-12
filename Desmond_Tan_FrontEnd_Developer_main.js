@@ -1,12 +1,5 @@
 $(document).ready(function() {
 
-	// Navigation funtions
-	// $('.sideMenuContainer').toggle('slide');
-	// $('.bar').on('click', function() {
-	// 	$('.sideMenuContainer').css({'left':'0'})
-	// 	$('.sideMenuContainer').toggle('slide');
-	// 	// $('.sideMenuContainer').animate({width: 'toggle'})
-	// });
 	$('.bar').on('click', function() {
 		$('.sideMenuContainer').toggleClass('showSideMenu')
 	})
@@ -25,10 +18,4 @@ $(document).ready(function() {
 		$('.exploreTextContainer').append(document.getElementsByClassName(this.id))	
 			
 	});
-
-
-
-
-
-
 });
