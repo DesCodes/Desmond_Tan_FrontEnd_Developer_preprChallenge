@@ -1,11 +1,15 @@
 $(document).ready(function() {
 
 	// Navigation funtions
+	// $('.sideMenuContainer').toggle('slide');
+	// $('.bar').on('click', function() {
+	// 	$('.sideMenuContainer').css({'left':'0'})
+	// 	$('.sideMenuContainer').toggle('slide');
+	// 	// $('.sideMenuContainer').animate({width: 'toggle'})
+	// });
 	$('.bar').on('click', function() {
-		$('.sideMenuContainer').css({'left':'0'})
-		$('.sideMenuContainer').toggle('slide');
-		// $('.sideMenuContainer').animate({width: 'toggle'})
-	});
+		$('.sideMenuContainer').toggleClass('showSideMenu')
+	})
 
 	// Explore Challenge image gallery functions
 	$('.imgContainer').children().on('click', function() {

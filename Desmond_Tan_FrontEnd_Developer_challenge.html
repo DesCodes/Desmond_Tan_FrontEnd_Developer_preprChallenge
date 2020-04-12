@@ -9,16 +9,16 @@
 </head>
 <body>
 	<header>
-		<div class="PreprOuterContainer">
+		<div class="preprOuterContainer">
 			<div class="preprContainer">
 				<ul>
 					<li>
-						<a href="https://preprlabs.org/" target="_blank">
-							<img src="https://preprmedialive.s3.amazonaws.com/public/front/img/logo.png" alt="prepr">
+						<a href="Desmond_Tan_FrontEnd_Developer_index.html">
+							<img class="logo" src="https://preprmedialive.s3.amazonaws.com/public/front/img/logo.png" alt="prepr">
 						</a>
 					</li>
 					<li class="barsContainer">
-						<i class="fas fa-bars"></i>
+						<i class="fas fa-bars bar"></i>
 					</li>
 				</ul>
 			</div>
@@ -26,7 +26,7 @@
 			<div class="sideMenuContainer">
 				<div class="userContainer">
 					<a href="">
-						<img src="https://preprmedialive.s3.ca-central-1.amazonaws.com/front/img/default-user.png" alt="user silhouette">
+						<img class="navUserProfile center" src="https://preprmedialive.s3.ca-central-1.amazonaws.com/front/img/default-user.png" alt="user silhouette">
 					</a>
 
 					<h5 id="userName">User Name</h5>
@@ -123,7 +123,7 @@
 			</div>
 
 			<div class="searchBar">
-				<ul>
+				<ul class="sideContainer">
 					<li class="searchContainer">
 						<span class="searchIconContainer">
 							<img src="https://preprmedialive.s3.amazonaws.com/public/front/img/search_icon.png">
@@ -132,11 +132,11 @@
 						<input type="text" placeholder="Search Challenges, Labs, Projects, and People">
 					</li>
 					<li class="bellContainer">
-						<i class="far fa-bell"></i>
+						<a href=""><i class="far fa-bell"></i></a>
 					</li>
 					<li class="userProfileContainer">
 						<a href="">
-							<img src="https://preprmedialive.s3.ca-central-1.amazonaws.com/front/img/default-user.png" alt="user silhouette">
+							<img class="userProfile" src="https://preprmedialive.s3.ca-central-1.amazonaws.com/front/img/default-user.png" alt="user silhouette">
 						</a>
 					</li>
 				</ul>
@@ -144,7 +144,7 @@
 		</div>
 	</header>
 
-	<section class="upperSection">
+	<!-- <section class="upperSection">
 		<div class="upperSectionContainer">
 			<div class="titleBox">
 					<h2>Challenge</h2>
@@ -166,7 +166,7 @@
 				</div>
 
 				<div class="calendarBox">
-					<svg id="icon-calendar" viewBox="0 0 32 32">
+					<svg id="icon-calendar" class='calendarIcon' viewBox="0 0 32 32">
 						<path d="M27 31h-22c-1.104 0-2-0.896-2-2v-22c0-1.105 0.896-2 2-2h2v1c0 1.657 1.343 3 3 3s3-1.343 3-3v-1h6v1c0 1.657 1.344 3 3 3s3-1.343 3-3v-1h2c1.104 0 2 0.895 2 2v22c0 1.104-0.896 2-2 2zM27 12h-22v17h22v-17zM10 17h-3v-3h3v3zM10 22h-3v-3h3v3zM10 27h-3v-3h3v3zM15 17h-3v-3h3v3zM15 22h-3v-3h3v3zM15 27h-3v-3h3v3zM20 17h-3v-3h3v3zM20 22h-3v-3h3v3zM20 27h-3v-3h3v3zM25 17h-3v-3h3v3zM25 22h-3v-3h3v3zM25 27h-3v-3h3v3zM21.969 8c-1.088 0-1.969-0.882-1.969-1.969v-2.062c0-1.088 0.881-1.969 1.969-1.969s1.969 0.881 1.969 1.969v2.062c0 1.087-0.881 1.969-1.969 1.969zM9.969 8c-1.088 0-1.969-0.882-1.969-1.969v-2.062c0-1.088 0.881-1.969 1.969-1.969s1.969 0.881 1.969 1.969v2.062c0 1.087-0.882 1.969-1.969 1.969z"></path>
 					</svg>
 
@@ -256,6 +256,59 @@
 			</div>
 
 		</div>
+	</section> -->
+
+	<section class="preprChallenge">
+		<div class="preprImgContainer">
+			<figure><img src="https://images.unsplash.com/photo-1557853197-aefb550b6fdc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt=""></figure>
+		</div>
+
+		<div class="infoContainer">
+			<h3 class="green">We want to see your best work.</h3>
+
+			<div class="shortInfoContainer">
+				<div class="descriptionBox">
+					<div class="iconBox">
+						<i class="pencilIcon far fa-edit"></i>
+					</div>
+					<h5>Redesign</h5>
+					<p>
+						Your task is to redesign a few key pages of the Prepr Network.Reimagine and create frontend webpages of the following pages (and possible sub-pages)
+					</p>
+				</div>
+
+				<div class="descriptionBox">
+					<div class="iconBox">
+						<i class="mobileIcon fas fa-mobile-alt"></i>
+					</div>
+					<h5>Responsive</h5>
+					<p>
+						You may use any frontend technologies you want. You do not need to create any backend functionality (you can hardcode details and images into the web pages).
+					</p>
+				</div>
+
+				<div class="descriptionBox">
+					<div class="iconBox">
+						<i class="thumbIcon far fa-thumbs-up"></i>
+					</div>
+					<h5>User Friendly</h5>
+					<p>
+						Do not be restrained by the current design and layout of the pages. However, do ensure that pages can perform their respective functions. Feel free to add additional details and functions, anything that you believe will result in the best user experience.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="submissionBox">
+			<h5>Status: <span class="green">Open</span></h5>
+			<h5>Submission Deadline: Apr 12, 2020</h5>
+
+			<div class="buttonBox">
+				<button>Submit</button>
+			</div>
+		</div>
 	</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="Desmond_Tan_FrontEnd_Developer_main.js"></script>
 </body>
 </html>
